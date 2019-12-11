@@ -22,12 +22,12 @@ vim_session:
 
 ## Directories
 
-Lectures: rhdir/git_Bio3SS_Lectures/
+Lectures: rhdir/git_Bio3SS_Lectures
 
 web: rhdir/git_Bio3SS_Bio3SS.github.io
 
-exponential: rhdir/git_Bio3SS_Exponential_figures/
-ts: rhdir/git_Bio3SS_Population_time_series/
+exponential: rhdir/git_Bio3SS_Exponential_figures
+ts: rhdir/git_Bio3SS_Population_time_series
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
