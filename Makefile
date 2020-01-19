@@ -6,8 +6,8 @@ current: target
 
 ## Screens
 
-projdirs += Lectures web
-rprojdirs += exponential ts
+projdirs += Lectures web Homework
+rprojdirs += exponential ts evaluation compensation bd_models WA_Ebola_Outbreak
 linkdirs += subLectures
 
 screen_session: 
@@ -23,11 +23,17 @@ vim_session:
 ## Directories
 
 Lectures: dir=rhdir/git_Bio3SS_Lectures
+Homework: dir=rhdir/git_Bio3SS_Homework
 
 web: dir=rhdir/git_Bio3SS_Bio3SS.github.io
 
 exponential: dir=rhdir/git_Bio3SS_Exponential_figures
 ts: dir=rhdir/git_Bio3SS_Population_time_series
+compensation: dir=rhdir/git_Bio3SS_Compensation_models
+bd_models: dir=rhdir/git_Bio3SS_Birth_death_models
+WA_Ebola_Outbreak: dir= rhdir/git_Outbreak-analysis_WA_Ebola_Outbreak
+
+evaluation: dir=rhdir/git_Bio3SS_Evaluation_materials
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
@@ -43,7 +49,7 @@ subLectures:
 
 ### Makestuff
 
-Sources += Makefile README.md
+Sources += Makefile README.md schedule.md
 
 Ignore += makestuff
 msrepo = https://github.com/dushoff
