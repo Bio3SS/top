@@ -8,7 +8,8 @@ current: target
 
 projdirs += Lectures web Homework
 rprojdirs += exponential ts evaluation compensation bd_models WA_Ebola_Outbreak
-linkdirs += subLectures
+## linkdirs += subLectures
+Ignore += subLectures
 
 screen_session: 
 	$(plvscreens)
