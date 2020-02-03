@@ -7,7 +7,7 @@ current: target
 ## Screens
 
 projdirs += Lectures web Homework Tests
-rprojdirs += exponential ts evaluation compensation bd_models WA_Ebola_Outbreak dd
+rprojdirs += exponential ts evaluation compensation bd_models WA_Ebola_Outbreak dd assign
 linkdirs += subLectures
 
 screen_session: 
