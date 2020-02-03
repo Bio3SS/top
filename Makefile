@@ -8,8 +8,7 @@ current: target
 
 projdirs += Lectures web Homework Tests
 rprojdirs += exponential ts evaluation compensation bd_models WA_Ebola_Outbreak dd
-## linkdirs += subLectures
-Ignore += subLectures
+linkdirs += subLectures
 
 screen_session: 
 	$(plvscreens)
@@ -41,6 +40,9 @@ dd: dir=rhdir/git_mac-theobio_Disease_data
 ## Private directory used by Homework and Tests
 evaluation: dir=rhdir/git_Bio3SS_Evaluation_materials
 
+## Older one; keep calculations here and substance there?
+assign:
+	git clone https://github.com/Bio3SS/Assignments.git $@
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
