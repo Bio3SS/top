@@ -7,8 +7,13 @@ current: target
 ## Screens
 
 projdirs += Lectures web Homework Tests
-rprojdirs += exponential ts evaluation compensation bd_models WA_Ebola_Outbreak dd assign
-linkdirs += subLectures
+rprojdirs += exponential ts evaluation
+rprojdirs += compensation bd_models WA_Ebola_Outbreak dd assign
+rprojdirs += Life_tables structure age
+
+## Older version of lectures 
+## linkdirs += subLectures
+## subLectures: dir=rhdir/git_Bio3SS_submodLectures
 
 screen_session: 
 	$(plvscreens)
@@ -27,15 +32,23 @@ web: dir=rhdir/git_Bio3SS_Bio3SS.github.io
 
 ## Public machinery
 Homework: dir=rhdir/git_Bio3SS_Homework
-Tests:
+Tests Life_tables:
 	git clone https://github.com/Bio3SS/$@.git
 
+structure:
+	git clone https://github.com/Bio3SS/Structured_models.git $@
+
+age:
+	git clone https://github.com/Bio3SS/Age_distributions.git $@
+
+## rhdir is deprecated now; it was for working out screens-import bugs
 exponential: dir=rhdir/git_Bio3SS_Exponential_figures
 ts: dir=rhdir/git_Bio3SS_Population_time_series
 compensation: dir=rhdir/git_Bio3SS_Compensation_models
 bd_models: dir=rhdir/git_Bio3SS_Birth_death_models
 WA_Ebola_Outbreak: dir= rhdir/git_Outbreak-analysis_WA_Ebola_Outbreak
 dd: dir=rhdir/git_mac-theobio_Disease_data
+
 
 ## Private directory used by Homework and Tests
 evaluation: dir=rhdir/git_Bio3SS_Evaluation_materials
@@ -48,11 +61,6 @@ assign:
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
 
 ## linkdirs
-
-subLectures: dir=rhdir/git_Bio3SS_submodLectures
-subLectures: 
-	$(rhsetup)
-	chmod -R a-w $@
 
 ######################################################################
 
