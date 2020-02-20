@@ -10,6 +10,7 @@ projdirs += Lectures web Homework Tests
 rprojdirs += exponential ts evaluation
 rprojdirs += compensation bd_models WA_Ebola_Outbreak dd assign
 rprojdirs += Life_tables structure age
+rprojdirs += boxes sims
 
 ## Older version of lectures 
 ## linkdirs += subLectures
@@ -40,6 +41,12 @@ structure:
 
 age:
 	git clone https://github.com/Bio3SS/Age_distributions.git $@
+
+sims:
+	git clone https://github.com/dushoff/SIR_simulations.git $@
+
+boxes: 
+	git clone https://github.com/dushoff/SIR_model_family $@
 
 ## rhdir is deprecated now; it was for working out screens-import bugs
 exponential: dir=rhdir/git_Bio3SS_Exponential_figures
@@ -79,4 +86,4 @@ makestuff/Makefile:
 -include makestuff/dirdir.mk
 -include makestuff/git.mk
 -include makestuff/visual.mk
--include makestuff/repohome.mk
+## -include makestuff/repohome.mk
