@@ -6,11 +6,11 @@ current: target
 
 ## Screens
 
-projdirs += Lectures web Homework Tests
+projdirs += Lectures web Homework Tests Marking
 rprojdirs += exponential ts evaluation
 rprojdirs += compensation bd_models WA_Ebola_Outbreak dd assign
 rprojdirs += Life_tables structure age
-rprojdirs += boxes sims
+rprojdirs += boxes sims Grading
 
 ## Older version of lectures 
 ## linkdirs += subLectures
@@ -34,6 +34,10 @@ web: dir=rhdir/git_Bio3SS_Bio3SS.github.io
 ## Public machinery
 Homework: dir=rhdir/git_Bio3SS_Homework
 Tests Life_tables:
+	git clone https://github.com/Bio3SS/$@.git
+
+## Marking is new (2020). Grading is the old, subby version
+Marking Grading:
 	git clone https://github.com/Bio3SS/$@.git
 
 structure:
@@ -61,8 +65,11 @@ dd: dir=rhdir/git_mac-theobio_Disease_data
 evaluation: dir=rhdir/git_Bio3SS_Evaluation_materials
 
 ## Older one; keep calculations here and substance there?
+## What calculations are here?
 assign:
 	git clone https://github.com/Bio3SS/Assignments.git $@
+
+Marking: 
 
 ## This is done automatically in makestuff; just here for hooks
 ## makestuff/repohome.auto.mk: makestuff/repohome.list makestuff/repohome.pl
