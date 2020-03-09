@@ -10,7 +10,7 @@ projdirs += Lectures web Homework Tests Marking
 rprojdirs += exponential ts evaluation
 rprojdirs += compensation bd_models WA_Ebola_Outbreak dd assign
 rprojdirs += Life_tables structure age
-rprojdirs += boxes sims Grading life_history
+rprojdirs += boxes sims Grading life_history competition
 
 ## Older version of lectures 
 ## linkdirs += subLectures
@@ -54,6 +54,9 @@ boxes:
 
 life_history: 
 	git clone https://github.com/Bio3SS/Life_history $@
+
+competition:
+	git clone https://github.com/Bio3SS/Competition_models $@
 
 ## rhdir is deprecated now; it was for working out screens-import bugs
 exponential: dir=rhdir/git_Bio3SS_Exponential_figures
