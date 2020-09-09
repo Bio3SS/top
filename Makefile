@@ -16,7 +16,7 @@ rprojdirs += boxes sims Grading life_history competition exploitation
 ## linkdirs += subLectures
 ## subLectures: dir=rhdir/git_Bio3SS_submodLectures
 
-screen_session: 
+screen_session: screens_update
 	$(plvscreens)
 
 ## Vim
