@@ -62,8 +62,8 @@ exploitation:
 	git clone https://github.com/Bio3SS/Exploitation_models $@
 
 ## rhdir is deprecated now; it was for working out screens-import bugs
-exponential: dir=rhdir/git_Bio3SS_Exponential_figures
-ts: dir=rhdir/git_Bio3SS_Population_time_series
+exponential: dir=rhdir/git_Bio4SS_Exponential_figures
+ts: dir=rhdir/git_Bio4SS_Population_time_series
 compensation: dir=rhdir/git_Bio3SS_Compensation_models
 bd_models: dir=rhdir/git_Bio3SS_Birth_death_models
 WA_Ebola_Outbreak: dir= rhdir/git_Outbreak-analysis_WA_Ebola_Outbreak
